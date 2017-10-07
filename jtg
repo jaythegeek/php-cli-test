@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+use Jtg\Commands\CreateProperty;
+use Jtg\Commands\ListProperties;
+use Jtg\Commands\ShowProperty;
+use Jtg\Commands\SearchProperties;
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+// Create the Application
+$application = new Symfony\Component\Console\Application;
+
+// Create Property Command
+$application->add(new CreateProperty);
+// List Properties Command
+$application->add(new ListProperties);
+// Show Property by ID Command
+$application->add(new ShowProperty);
+// Search for Properties by Status / Price / Beds Command
+$application->add(new SearchProperties);
+
+// Run it
+$application->run();

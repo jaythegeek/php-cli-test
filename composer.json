@@ -1,0 +1,11 @@
+{
+	"autoload" : {
+		"psr-4" : {
+			"Jtg\\" : "app/Jtg"
+		}
+	},
+	"require": {
+		"symfony/console": "^3.3",
+		"doctrine/orm": "^2.5"
+	}
+}
