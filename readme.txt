@@ -1,5 +1,6 @@
-composer require jaythegeek/php-cli-test
+Clone the repository, cd into the folder php-cli-test and execute any of the following
 
+php jtg
 php jtg all
 php jtg show <ID>
 php jtg search <status> [--price=1000] [--bedrooms=2]
