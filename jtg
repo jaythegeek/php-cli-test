@@ -9,7 +9,7 @@ use Jtg\Commands\SearchProperties;
 require_once __DIR__ . '/vendor/autoload.php';
 
 // Create the Application
-$application = new Symfony\Component\Console\Application;
+$application = new Symfony\Component\Console\Application('jtg', '1.2 (stable)');
 
 // Create Property Command
 $application->add(new CreateProperty);
